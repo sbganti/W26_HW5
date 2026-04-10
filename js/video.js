@@ -6,7 +6,8 @@ window.addEventListener("load", function() {
     video.autoplay = false;
     video.loop = false;
 
-    // Initialize volume display
+    // Set volume to match slider default and display it
+    video.volume = 1;
     updateVolume();
 
     // Play Button
