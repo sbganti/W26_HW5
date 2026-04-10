@@ -6,9 +6,9 @@ window.addEventListener("load", function() {
     video.autoplay = false;
     video.loop = false;
 
-    // Set volume to match slider default and display it
+    // Set volume to match slider default (100) and display it immediately
     video.volume = 1;
-    updateVolume();
+    document.querySelector("#volume").textContent = "100%";
 
     // Play Button
     document.querySelector("#play").addEventListener("click", function() {
